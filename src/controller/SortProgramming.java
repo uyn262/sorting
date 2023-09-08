@@ -39,9 +39,9 @@ public class SortProgramming extends Menu<String> {
             case 1:
                 sort();
                 break;
-            /*case 2:
+            case 2:
                 search();
-                break;*/
+                break;
             case 3:
                 System.exit(0);
         }
@@ -81,7 +81,7 @@ public class SortProgramming extends Menu<String> {
         SortMenu sm = new SortMenu();
         sm.run();
     }
-/*
+
     public void search() {
         final String[] mcSearch = {"Linear Search", "Binary Search", "Exit"};
         class SearchMenu extends Menu<String> {
@@ -97,6 +97,7 @@ public class SortProgramming extends Menu<String> {
                 int value = library.getInt("\nEnter number to find: ", 1, 100);
                 switch (n) {
                     case 1:
+                        System.out.println("Found value: " + value + " at index: " + algorithm.linearSearchFunction(array, value));
                         break;
                     case 2:
                         System.out.println("Found value: " + value + " at index: " + algorithm.binarySearch(array, value));
@@ -109,5 +110,5 @@ public class SortProgramming extends Menu<String> {
         }
         SearchMenu sm = new SearchMenu();
         sm.run();
-    }*/
+    } 
 }
